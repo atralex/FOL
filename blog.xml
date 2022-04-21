@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.xsl" type="text/xsl"?>
+<noticias>
+    <item id="1">
+        hola buenas tardes que tal estan
+    </item>
+</noticias>

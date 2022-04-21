@@ -1,0 +1,16 @@
+.navbar {
+    background-image: linear-gradient(to right,rgb(177, 109, 255), rgb(242, 125, 255)) ;
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(to right, rgb(177, 109, 255), rgb(242, 125, 255));
+}
+.titulo{
+    height: 50px;
+    background-color: rgb(253, 144, 144);
+}
+.forms{
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(230, 220, 230);
+}
