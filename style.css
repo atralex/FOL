@@ -1,16 +1,22 @@
 .navbar {
-    background-image: linear-gradient(to right,rgb(177, 109, 255), rgb(242, 125, 255)) ;
+    background-image: linear-gradient(to right bottom,rgb(177, 109, 255), rgb(242, 125, 255)) ;
     text-decoration: none;
 }
 body{
-    background-image: linear-gradient(to right, rgb(177, 109, 255), rgb(242, 125, 255));
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .titulo{
     height: 50px;
-    background-color: rgb(253, 144, 144);
+    width: 30%;
+    background-color: rgb(255, 173, 173);
+    margin-left: 35%;
+    margin-right: 35%;
 }
 .forms{
     width: 50%;
     margin-left: 25%;
-    background-color: rgb(230, 220, 230);
+    background-color: rgb(205, 205, 205);
 }

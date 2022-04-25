@@ -57,8 +57,8 @@
                     </nav>
                 </header>
                 <div class="container-fluid">
-                    <div class="titulo">
-                        <h4 class="text-center">Noticias</h4>
+                    <div class="titulo rounded-lg">
+                        <h4 class="text-center mt-2">Reflexiones</h4>
                     </div>
                     <xsl:for-each select="noticias/item">
                      <div class="forms mt-3 rounded-lg">
@@ -82,11 +82,14 @@
                             <div class="modal-header">
                                 <h5 class="modal-title">RR.SS.</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">close</span>
+                                    <span aria-hidden="true">X</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Mis redes sociales
+                                Twitter: <br/>
+                                Instagram: <br/>
+                                Facebook: <br/>
+                                LinkedIn:
                             </div>
                         </div>
                     </div>
@@ -98,7 +101,7 @@
                             <div class="modal-header">
                                 <h5 class="modal-title">¿Quien Soy?</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">close</span>
+                                    <span aria-hidden="true">X</span>
                                 </button>
                             </div>
                             <div class="modal-body">
