@@ -12,10 +12,10 @@
 <!ENTITY euro   "&#8364;">
 ]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="html" encoding="utf-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
-	<xsl:template match="/">
-		
-		 <html lang="en">
+    <xsl:output method="html" encoding="utf-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
+    <xsl:template match="/">
+        
+        <html lang="en">
             
             <head>
                 <title>BLOG</title>
@@ -40,7 +40,7 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavId">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Inicio</a>
+                                    <a class="nav-link" href="blog.xml">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-toggle="modal" data-target="#F">¿Quién soy?</a>
@@ -58,17 +58,17 @@
                 </header>
                 <div class="container-fluid">
                     <div class="titulo rounded-lg">
-                        <h4 class="text-center mt-2">Reflexiones</h4>
+                        <h4 class="text-center mt-2 text-white">Reflexiones</h4>
                     </div>
                     <xsl:for-each select="noticias/item">
-                     <div class="forms mt-3 rounded-lg">
-                        <br/>
-                        <h4 class="ml-2 mt-1">Entrada <xsl:value-of select="@id"/></h4>
-                        <hr/>
-                        <p class="m-3"> <xsl:value-of select="."/> </p>
-                    </div>
+                        <div class="forms mt-3 rounded-lg">
+                            <br/>
+                            <h4 class="ml-2 mt-1">Entrada <xsl:value-of select="@id"/></h4>
+                            <hr/>
+                            <p class="m-3"> <xsl:value-of select="."/> </p>
+                        </div>
                     </xsl:for-each>
-                   
+                    
                     
                     
                 </div>
@@ -82,34 +82,39 @@
                             <div class="modal-header">
                                 <h5 class="modal-title">RR.SS.</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">X</span>
+                                    x
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Twitter: <br/>
-                                Instagram: <br/>
-                                Facebook: <br/>
-                                LinkedIn:
+                                <h4>Redes Sociales De Alejandro Rodriguez</h4>
+                                <h5>Twitter</h5>
+                                <a href="www.twitter.com"><img src="img/logo.png" alt="" width="5%" class="ml-2"/></a>
+                                <br /><br />
+                                <h5>Instagram</h5>
+                                <a href="www.instagram.com"><img src="img/instalogo.png" alt="" width="5%" class="ml-2"/></a>
+                                <br /><br />
+                                <h5>GitHub</h5>
+                                <a href="https://github.com/atralex"><img src="img/gitlogo.png" alt="" width="10%"/></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="F" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">¿Quien Soy?</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">X</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Mi descrision.
-                            </div>
-                        </div>
-                    </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Quien Soy?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        x
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <p>Me llamo Alejandro, soy un desarrollador de aplicaciones web. <br/> Siempre me había preguntado que habría dentro del código de una página web como Youtube, o Facebook. Poco a poco decidí dejar de preguntarme que habrá dentro de una web, o una aplicación de móvil o PC, y comencé a aprender, que hay dentro. Empecé como creo que todos hemos empezado, copiando y pegando el código fuente de la web de inicio de Facebook en un bloc de notas, y guardandolo como .html. Poco a poco fui aprendiendo pequeñas lecciones, aquí y allá, uno de mis mayores logros en aquel momento, fue un "hack" que idee para sacar cuentas de Facebook, colando un script que me mandaba lo que había sido escrito en Usuario y Contraseña a un documento. Por motivos legales ese programa nunca entró en la nube, se quedó como curiosidad que enseñarle a mis amigos en el ordenador. Creo que ese fue uno de los dos momentos donde descubrí mi pasión por la programación. El segundo, fue una tarde que me pasé con un amigo programando un código que sacase numeros primos y los fuese escribiendo por pantalla. Así comenzó mi historia con el mundo de la programación, y como se suele decir, el resto es historia. </p>
+                </div>
+            </div>
+        </div>
+    </div>
                 <!-- Optional JavaScript -->
                 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -125,7 +130,7 @@
             
         </html>
         
-		
-		
-	</xsl:template>
+        
+        
+    </xsl:template>
 </xsl:stylesheet>
